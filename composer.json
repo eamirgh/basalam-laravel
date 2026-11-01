@@ -53,7 +53,12 @@
     },
     "config": {
         "sort-packages": true,
-        "allow-plugins": {}
+        "allow-plugins": {},
+        "policy": {
+            "advisories": {
+                "block": false
+            }
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

@@ -25,6 +25,9 @@ jobs:
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }}
 
+    env:
+      COMPOSER_NO_BLOCKING: 1
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -43,7 +46,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "illuminate/contracts:${{ matrix.laravel }}" "illuminate/http:${{ matrix.laravel }}" "illuminate/support:${{ matrix.laravel }}" --no-interaction --no-update
+          if [[ "${{ matrix.laravel }}" == 11* ]]; then
+            TESTBENCH="orchestra/testbench:^9.0"
+          else
+            TESTBENCH="orchestra/testbench:^10.0"
+          fi
+          composer require "illuminate/contracts:${{ matrix.laravel }}" "illuminate/http:${{ matrix.laravel }}" "illuminate/support:${{ matrix.laravel }}" "$TESTBENCH" --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: Execute tests

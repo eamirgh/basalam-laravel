@@ -2,9 +2,9 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/eamirgh/basalam-laravel.svg?style=flat-square)](https://packagist.org/packages/eamirgh/basalam-laravel)
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue.svg?style=flat-square)](https://eamirgh.github.io/basalam-laravel/)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/eamirgh/basalam-laravel/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/eamirgh/basalam-laravel/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/eamirgh/basalam-laravel/run-tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/eamirgh/basalam-laravel/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/eamirgh/basalam-laravel.svg?style=flat-square)](https://packagist.org/packages/eamirgh/basalam-laravel)
-[![License](https://img.shields.io/packagist/l/eamirgh/basalam-laravel.svg?style=flat-square)](https://github.com/eamirgh/basalam-laravel/blob/main/LICENSE)
+[![License](https://img.shields.io/packagist/l/eamirgh/basalam-laravel.svg?style=flat-square)](https://github.com/eamirgh/basalam-laravel/blob/master/LICENSE)
 
 A comprehensive, TDD-backed Laravel package for interacting with the **Basalam API** ([Gateway](https://developers.basalam.com/docs/api/gateway) and [Core](https://developers.basalam.com/docs/api/core)).
 
