@@ -1,0 +1,9 @@
+/vendor/
+/node_modules/
+/docs/.vitepress/dist/
+/docs/.vitepress/cache/
+composer.lock
+package-lock.json
+.phpunit.result.cache
+.env
+.DS_Store
